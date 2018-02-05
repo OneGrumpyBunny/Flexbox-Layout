@@ -1,0 +1,147 @@
+body {
+  font-family: 'helvetica';
+  margin:0;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/women-in-crypto-main-796x469.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+header, footer, section > * {
+  box-shadow: 2px 2px 8px #404040;
+  
+}
+
+nav {
+    display: flex;
+    flex: 0 1 100%;
+    flex-direction: row;
+    justify-content:space-between;
+    /*background-color: #eee;*/
+    max-height: 5vh;
+    align-items: flex-end;
+  
+}
+
+nav, footer, section > * {
+  margin: 0px;
+  padding: 0 10px;
+}
+
+a {
+  text-decoration:none;
+  color: #211716;
+  margin: 3px;
+  padding: 5px;
+  font-size: 80%;
+}
+nav img{
+    max-width:50px;
+}
+
+.nava {
+  display:flex;
+}
+
+
+.nava > a:hover {
+  color: #aaa;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    height: 95vh;
+    align-items: stretch;
+}
+
+header {
+  background-color: #000;
+  flex: 0 0 40%;
+  text-align:center;
+  display: flex;  
+  align-items: flex-end;
+}
+
+h1 {
+    color: #000;
+    background: #fff;
+    opacity: .8;
+    flex: 1 1 100%;
+    font-size: 51px;
+}
+
+nav img  {
+  flex: 0 1 10%;
+}
+
+header img {
+  width: 100%;
+}
+footer {
+    background-color: #211716;
+    flex: 0 0 4%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer > a {
+  color: #aaa;
+}
+
+footer > a:hover {
+  color: #404040;
+}
+
+
+section {
+  display: flex;
+  flex: 1 1 100%;
+}
+
+aside {
+  background-color: #dde9f0;
+  flex: 1 1 20%;
+  padding: 10px;
+}
+article {
+  flex: 1 1 70%;
+  background-color: white;
+  padding: 10px;
+}
+
+@media all and (max-width:640px) {
+  
+  
+  body {
+    flex-direction: column;   
+  }
+nav {
+    flex: 1 1 10%;
+    flex-direction: row;
+}
+
+nav img {
+    display:none;
+}
+
+header {
+    flex: 1 1 37%;
+}
+
+nav, header, footer, section > * {
+    
+    padding: 5px;
+}
+  h1 {
+    font-size: 31px;
+  }
+}
